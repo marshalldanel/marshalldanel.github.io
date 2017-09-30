@@ -1,0 +1,43 @@
+#about {
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 5px 30px 0 rgba(0,0,0,.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#about:focus {
+  outline: none !important;
+}
+
+#about img {
+  border-radius: 62.5px;
+  height: 125px;
+  margin-bottom: 2em;
+  width: 125px;
+}
+
+#about .content {
+  margin: 2em;
+  text-align: center;
+}
+
+#about .name {
+  color: black;
+  padding-bottom: 1em;
+}
+
+.soft-skills {
+  align-self: flex-start;
+  margin-left: 2em;
+  padding-bottom: 1em;
+}
+
+.soft-skills div {
+  padding-bottom: 1em;
+}
+
+.soft-skills p {
+  padding-bottom: .5em;
+}

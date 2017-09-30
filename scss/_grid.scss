@@ -1,0 +1,36 @@
+footer {
+  grid-column: 1/25;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  grid-template-rows: 20em;
+  grid-row-gap: 3em;
+}
+
+#about {
+  grid-column: 2/24;
+  grid-row: 8/14;
+}
+
+#home {
+  grid-area: 1/1/8/25;
+}
+
+#contact {
+  grid-column: 2/24;
+}
+
+#projects {
+  grid-column: 2/24;
+}
+
+#skills {
+  grid-column: 2/24;
+  grid-row: 14/20;
+}
+
+.title {
+  grid-column: 1/3;
+}

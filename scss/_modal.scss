@@ -1,0 +1,50 @@
+.closeBtn {
+  color: #ccc;
+  font-size: 30px;
+  float: right;
+  margin: -35px 0 0 0;
+}
+
+.closeBtn:hover, .closeBtn:focus {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@keyframes modalOpen {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}
+
+.modal {
+  animation-name: modalOpen;
+  animation-duration: .5s;
+  background-color: rgba(0, 0, 0, .8);
+  display: none;
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.modal-container {
+  background-color: #f4f4f4;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, .2), 0 7px 20px 0 rgba(0, 0, 0, .17);
+  margin: 30% auto;
+  width: 90%;
+}
+
+.modal-content p {
+  line-height: 1.5;
+  padding: 1em 2em 2em 2em;
+  text-align: left;
+}
+
+.modal-title {
+  font-family: 'Merriweather', serif;
+  padding: 1em 0 0 2em;
+  text-align: left;
+}

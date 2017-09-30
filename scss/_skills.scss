@@ -1,0 +1,16 @@
+#skills {
+  background-color: #FFF;
+  box-shadow: 0 5px 30px 0 rgba(0,0,0,.15);
+  color: #000;
+  padding-bottom: 1em;
+  text-align: center;
+}
+
+#skills:focus {
+  outline: none !important;
+}
+
+#skills img {
+  height: 80px;
+  padding: 10px;
+}

@@ -1,0 +1,20 @@
+footer {
+  align-items: center;
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+}
+
+footer p {
+  color: white;
+  margin-top: 1em;
+}
+
+footer .external-nav {
+  margin: 1em;
+}
+
+footer .external-nav a {
+  color: white;
+  font-size: .9em;
+}

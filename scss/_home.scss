@@ -1,0 +1,38 @@
+.external-nav a {
+  color: black;
+  font-size: 1em;
+  padding: 5px;
+  text-decoration: none;
+}
+
+#home {
+  align-items: center;
+  background-image: url('./../docs/cover.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+#home .name {
+  font-size: 3em;
+}
+
+.home-nav {
+  margin-bottom: 1em;
+  color: black;
+}
+
+.home-nav a {
+  text-decoration: none;
+  color: black;
+}
+
+.name {
+  color: black;
+  font-family: 'Merriweather', serif;
+  margin-bottom: 14px;
+}
