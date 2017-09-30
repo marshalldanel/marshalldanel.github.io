@@ -1,5 +1,5 @@
 #projects {
-  background-color: #FFFFFF;
+  background-color: $main-light;
   box-shadow: 0 5px 30px 0 rgba(0,0,0,.15);
   text-align: center;
 }
@@ -24,6 +24,6 @@
 }
 
 .modal-content a {
-  color: black;
+  color: $font-dark;
   text-decoration: none;
 }

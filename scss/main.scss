@@ -1,3 +1,5 @@
+@import 'fonts.scss';
+@import 'colors.scss';
 @import 'grid.scss';
 @import 'home.scss';
 @import 'about.scss';
@@ -16,14 +18,11 @@
 }
 
 body {
-  background-color: #F5F5F5;
+  background-color: $main;
   height: 100%;
-  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
   overflow-x: hidden;
 }
 
 .title {
-  font-family: 'Merriweather', serif;
-  font-size: 1.3em;
-  padding: 2.3em 0 2em 0;
+  padding: 1.5em 0 1.5em 0;
 }

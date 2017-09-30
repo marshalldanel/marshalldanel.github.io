@@ -1,6 +1,5 @@
 .external-nav a {
-  color: black;
-  font-size: 1em;
+  color: $font-dark;
   padding: 5px;
   text-decoration: none;
 }
@@ -23,16 +22,15 @@
 
 .home-nav {
   margin-bottom: 1em;
-  color: black;
+  color: $font-dark;
 }
 
 .home-nav a {
   text-decoration: none;
-  color: black;
+  color: $font-dark;
 }
 
 .name {
-  color: black;
-  font-family: 'Merriweather', serif;
+  color: $font-dark;
   margin-bottom: 14px;
 }
