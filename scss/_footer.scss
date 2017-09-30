@@ -3,18 +3,18 @@ footer {
   background-color: $main-dark;
   display: flex;
   flex-direction: column;
-}
+  
+  p {
+    color: $font-light;
+    margin-top: 1em;
+  }
 
-footer p {
-  color: $font-light;
-  margin-top: 1em;
-}
-
-footer .external-nav {
-  margin: 1em;
-}
-
-footer .external-nav a {
-  color: $font-light;
-  font-size: .9em;
+  .external-nav {
+    margin: 1em;
+  
+    a {
+      color: $font-light;
+      font-size: .9em;
+    }
+  }
 }

@@ -4,13 +4,13 @@
   color: $font-dark;
   padding-bottom: 1em;
   text-align: center;
-}
 
-#skills:focus {
-  outline: none !important;
-}
-
-#skills img {
-  height: 80px;
-  padding: 10px;
+  &:focus {
+    outline: none !important;
+  }
+  
+  img {
+    height: 80px;
+    padding: 10px;
+  }
 }

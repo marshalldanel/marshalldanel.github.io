@@ -9,26 +9,21 @@ footer {
   grid-row-gap: 3em;
 }
 
-#about {
+
+#projects, #contact {
   grid-column: 2/24;
-  grid-row: 8/14;
+}
+
+#about {
+  grid-area: 8/2/14/24;
 }
 
 #home {
   grid-area: 1/1/8/25;
 }
 
-#contact {
-  grid-column: 2/24;
-}
-
-#projects {
-  grid-column: 2/24;
-}
-
 #skills {
-  grid-column: 2/24;
-  grid-row: 14/20;
+  grid-area: 14/2/20/24;
 }
 
 .title {

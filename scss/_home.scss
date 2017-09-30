@@ -14,23 +14,20 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-}
 
-#home .name {
-  font-size: 3em;
+  h1 {
+    font-size: 3em;
+    color: $font-dark;
+    margin-bottom: 14px;
+  }
 }
 
 .home-nav {
   margin-bottom: 1em;
   color: $font-dark;
-}
 
-.home-nav a {
-  text-decoration: none;
-  color: $font-dark;
-}
-
-.name {
-  color: $font-dark;
-  margin-bottom: 14px;
+  a {
+    text-decoration: none;
+    color: $font-dark;
+  }
 }

@@ -3,12 +3,12 @@
   font-size: 30px;
   float: right;
   margin: -35px 0 0 0;
-}
 
-.closeBtn:hover, .closeBtn:focus {
-  color: $font-dark;
-  cursor: pointer;
-  text-decoration: none;
+  &:hover, &:focus {
+    color: $font-dark;
+    cursor: pointer;
+    text-decoration: none;
+  }
 }
 
 @keyframes modalOpen {

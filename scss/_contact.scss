@@ -44,14 +44,14 @@ textarea {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-}
+  
+  &:focus {
+    outline: none !important;
+  }
 
-#contact:focus {
-  outline: none !important;
-}
-
-#contact .title {
-  text-align: center;
+  h2 {
+    text-align: center;
+  }
 }
 
 .contact-form {
