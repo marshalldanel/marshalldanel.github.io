@@ -64,7 +64,7 @@ roadieCloseBtn.onclick = () => {
 // Schooodle modal logic
 const schooodleModal = document.getElementById('schooodleModal');
 const schooodleModalBtn = document.getElementById('schooodleModalBtn');
-const schooodleCloseBtn = document.getElementsByClassName('closeBtn')[2];
+const schooodleCloseBtn = document.getElementsByClassName('closeBtn')[3];
 
 schooodleModalBtn.onclick = () => {
   schooodleModal.style.display = 'block';
@@ -77,7 +77,7 @@ schooodleCloseBtn.onclick = () => {
 // Jungle modal logic
 const jungleModal = document.getElementById('jungleModal');
 const jungleModalBtn = document.getElementById('jungleModalBtn');
-const jungleCloseBtn = document.getElementsByClassName('closeBtn')[3];
+const jungleCloseBtn = document.getElementsByClassName('closeBtn')[2];
 
 jungleModalBtn.onclick = () => {
   jungleModal.style.display = 'block';
