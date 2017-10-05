@@ -1,0 +1,132 @@
+// Creating loading image
+#loader {
+  border: 3px solid transparent;
+  border-radius: 50%;
+  border-top-color: $loader-outer;
+  display: block;
+  height: 150px;
+  left: 50%;
+  margin: -75px 0 0 -75px;
+  position: relative;
+  top: 50%;
+  width: 150px;
+  z-index: 1500;
+
+  animation: spin 2s linear infinite;
+  -webkit-animation: spin 2s linear infinite;
+
+  &:before {
+    border: 3px solid transparent;
+    border-radius: 50%;
+    border-top-color: $main-light;
+    bottom: 5px;
+    content: '';
+    left: 5px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+
+    animation: spin 3s linear infinite;
+    -webkit-animation: spin 3s linear infinite;
+  }
+
+  &:after {
+    border: 3px solid transparent;
+    border-radius: 50%;
+    border-top-color: $loader-inner;
+    bottom: 15px;
+    content: '';
+    left: 15px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+
+    animation: spin 1.5s linear infinite;
+    -webkit-animation: spin 1.5s linear infinite;
+  }
+}
+
+#loader-wrapper {
+  height:100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+// Adding background, panels
+
+.loaded #loader {
+  opacity: 0;
+  transition: all .3s ease-out;
+  -webkit-transition: all .3s ease-out;
+}
+
+.loaded #loaded-wrapper {
+  visibility: hidden;
+}
+
+#loader-wrapper .loader-section {
+  position: fixed;
+  top: 0;
+  width: 51%;
+  height: 100%;
+  background: #222222;
+  z-index: 1000;
+}
+
+#loader-wrapper .loader-section.section-left {
+  left: 0;
+}
+
+#loader-wrapper .loader-section.section-right {
+  right: 0;
+}
+
+.loaded #loader-wrapper .loader-section.section-left {
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+.loaded #loader-wrapper .loader-section.section-right {
+  -webkit-transform: translateX(100%);
+      -ms-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.loaded #loader-wrapper .loader-section.section-right,
+.loaded #loader-wrapper .loader-section.section-left {
+  -webkit-transition: all .9s .3s cubic-bezier(.645, .045, .355, 1.0);
+          transition: all .9s .3s cubic-bezier(.645, .045, .355, 1.0);
+}
+
+.loaded #loader-wrapper {
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+
+  -webkit-transition: all .3s 1.2s ease-out;
+          transition: all .3s 1.2s ease-out;
+}
+
+.no-js #loader-wrapper {
+  display: none;
+}
+.no-js h1 {
+  color: #222222;
+}

@@ -1,0 +1,31 @@
+#projects {
+  background-color: $main-light;
+  box-shadow: 0 5px 30px 0 rgba(0,0,0,.15);
+  text-align: center;
+  
+  &:focus {
+  outline: none !important;
+  }
+}
+
+#projects-img {
+  a {
+    transition: opacity .4s;
+  
+    &:hover {
+      opacity: .5;
+      cursor: pointer;
+    }
+  }
+
+  img {
+    height: 100%;
+    margin-bottom: -5px;
+    width: 100%;
+  }
+}
+
+.modal-content a {
+  color: $font-dark;
+  text-decoration: none;
+}
