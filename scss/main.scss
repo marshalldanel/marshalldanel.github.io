@@ -1,28 +1,14 @@
-@import 'fonts.scss';
-@import 'colors.scss';
-@import 'grid.scss';
-@import 'home.scss';
-@import 'about.scss';
-@import 'skills.scss';
-@import 'projects.scss';
-@import 'modal.scss';
-@import 'contact.scss';
-@import 'footer.scss';
+@import 'base/fonts.scss';
+@import 'base/colors.scss';
+@import 'base/mixins.scss';
+@import 'base/globals.scss';
 
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-  background-color: $main;
-  height: 100%;
-  overflow-x: hidden;
-}
-
-.title {
-  padding: 1.5em 0 1.5em 0;
-}
+@import 'styles/about.scss';
+@import 'styles/contact.scss';
+@import 'styles/footer.scss';
+@import 'styles/grid.scss';
+@import 'styles/home.scss';
+@import 'styles/loader.scss';
+@import 'styles/modal.scss';
+@import 'styles/projects.scss';
+@import 'styles/skills.scss';

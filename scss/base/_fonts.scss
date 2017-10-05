@@ -1,0 +1,63 @@
+// @import url(https://fonts.googleapis.com/css?family=Lato:700,400|Merriweather:300,300italic,700);
+
+// h1,h2,h3,h4,h5,h6 {
+//   font-family: "Lato", sans-serif;
+//   font-weight: 400;
+// }
+// p,a,li,blockquote,input,textarea {
+//   font-family: "Merriweather", serif;
+//   font-weight: 300;
+// }
+
+@import url(https://fonts.googleapis.com/css?family=Lato:700,400,300|Merriweather:300,300italic,400,700);
+
+h1 {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 400;
+}
+
+h2,h4,h5,h6 {
+  font-family: "Merriweather", sans-serif;
+  font-weight: 300;
+}
+
+input,textarea {
+  font-family: "Lato", serif;
+  font-weight: 400;
+}
+
+p,a {
+  font-family: "Lato", serif;
+  font-weight: 300;
+}
+
+#position {
+  font-weight: 400;
+}
+
+// @import url(https://fonts.googleapis.com/css?family=Cardo|Lato:700,400,400italic);
+
+// h1,h2,h3,h4,h5,h6 {
+//   font-family: "Cardo", serif;
+//   font-weight: 400;
+// }
+// p,a,li,blockquote,input,textarea {
+//   font-family: "Lato", sans-serif;
+//   font-weight: 400;
+// }
+
+// @import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700,300);
+
+// h1,h2,h3,h4,h5,h6 {
+//   font-family: "Lato", sans-serif;
+//   font-weight: 300;
+// }
+// p,a,li,blockquote,input,textarea {
+//   font-family: "Lato", sans-serif;
+//   font-weight: 400;
+// }
