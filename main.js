@@ -1,5 +1,5 @@
 // Check if all images are loaded //
-$('#container').imagesLoaded({ background: true }, () => {
+$('.container').imagesLoaded({ background: true }, () => {
   $('body').addClass('loaded');
 });
 
