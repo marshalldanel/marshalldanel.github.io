@@ -1,3 +1,8 @@
+// Check if all images are loaded //
+$('#container').imagesLoaded({ background: true }, () => {
+  $('body').addClass('loaded');
+});
+
 // jQuery scroll logic
 // Select all links with hashes
 $('a[href*="#"]')
@@ -34,6 +39,7 @@ $('a[href*="#"]')
       }
     }
   });
+
 
 // Chatty modal logic
 const chattyModal = document.getElementById('chattyModal');
@@ -93,3 +99,23 @@ document.onclick = (e) => {
     e.target.style.display = 'none';
   }
 };
+
+// Enformed ajax post
+$('#form').submit((event) => {
+  event.preventDefault();
+  $.ajax({
+    url: 'https://www.enformed.io/k3dr9smc',
+    method: 'post',
+    dataType: 'text/json',
+    accepts: 'application/json',
+    data: $('#form').serialize(),
+    success() {
+      console.log('Your form was successfully received!');
+      $('#form')[0].reset().blur();
+    },
+    error() {
+      console.log('Failure. Try again.');
+      $('#form')[0].reset().blur();
+    },
+  });
+});
