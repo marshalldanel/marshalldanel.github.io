@@ -5,22 +5,22 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge, chrome=1'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <meta name='description' content="Marshall Danel's Portfolio">
-    <script async src='https://use.fontawesome.com/eb2107fcce.js'></script>
     <meta author='Marshall Danel'>
     <title>Marshall Danel</title>
+    <script async src='https://use.fontawesome.com/eb2107fcce.js'></script>
     <link rel='stylesheet' href='./scss/main.css'>
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="manifest.json">
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <link rel='apple-touch-icon' sizes='180x180' href='apple-touch-icon.png'>
+    <link rel='icon' type='image/png' sizes='32x32' href='favicon-32x32.png'>
+    <link rel='icon' type='image/png' sizes='16x16' href='favicon-16x16.png'>
+    <link rel='manifest' href='manifest.json'>
+    <link rel='mask-icon' href='safari-pinned-tab.svg' color='#5bbad5'>
   </head>
   <body>
 
-    <div id="loader-wrapper">
-      <div id="loader"></div>
-      <div class="loader-section section-left"></div>
-      <div class="loader-section section-right"></div>
+    <div id='loader-wrapper'>
+      <div id='loader'></div>
+      <div class='loader-section section-left'></div>
+      <div class='loader-section section-right'></div>
     </div>
     
     <div class='container'>
@@ -56,14 +56,25 @@
         <p class='content'>
           Developer based in Northern California. I build things. Started from the bottom, now I'm... looking for work. Let's make something together!
         </p>
-        <!-- <div class='soft-skills'>
-          <p>Coffee</p>
-          <div id='coffee-progress'> 99%</div>
-          <p>Meat</p>
-          <div id='meat-progress'> 57%</div>
-          <p>IPAs</p>
-          <div id='ips-progress'> 85%</div>
-        </div> -->
+        
+        <div id='skill-1'class='skill-bar-container'>
+          <span class='skill-name'>Beer</span>
+          <span class='skill-percent'>40%</span>
+          <span class='skill-bar level1'></span>
+        </div>
+      
+        <div id='skill-2' class='skill-bar-container'>
+          <span class='skill-name'>Coffee</span>
+          <span class='skill-percent'>60%</span>
+          <span class='skill-bar level2'></span>
+        </div>
+
+        <div id='skill-3' class='skill-bar-container'>
+          <span class='skill-name'>Confefe</span>
+          <span class='skill-percent'>100%</span>
+          <span class='skill-bar level3'></span>
+        </div>
+
       </section>
       
       <section id='skills'>
@@ -164,7 +175,7 @@
             </div>
             <div class='form-group'>
               <textarea type='text' class='form-input' name='message' placeholder='Message' required ></textarea>
-              <input type="hidden" name="*honeypot" style='display:none'/>
+              <input type='hidden' name='*honeypot' style='display:none'/>
             </div>
             <input type='submit' class='form-group button-black' id='submit' value='Submit' />
           </form>
@@ -186,7 +197,7 @@
       </footer>
     </div>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js'></script>
     <script>
       WebFont.load({
         google: {
@@ -195,7 +206,7 @@
       });
     </script>
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
     <script src='main.js'></script>
   </body>
   </html>
