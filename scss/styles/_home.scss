@@ -2,6 +2,11 @@
   color: $font-dark;
   padding: 5px;
   text-decoration: none;
+  font-size: 1.1em;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 #home {
@@ -29,9 +34,14 @@
 .home-nav {
   margin-bottom: 1em;
   color: $font-dark;
+  font-size: 1.1em;
 
   a {
     text-decoration: none;
     color: $font-dark;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
