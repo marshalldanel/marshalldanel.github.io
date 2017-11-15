@@ -101,21 +101,30 @@ document.onclick = (e) => {
 };
 
 // Enformed ajax post
-$('#form').submit((event) => {
-  event.preventDefault();
-  $.ajax({
-    url: 'https://www.enformed.io/k3dr9smc',
-    method: 'post',
-    dataType: 'text/json',
-    accepts: 'application/json',
-    data: $('#form').serialize(),
-    success() {
-      console.log('Your form was successfully received!');
-      $('#form')[0].reset().blur();
-    },
-    error() {
-      console.log('Failure. Try again.');
-      $('#form')[0].reset().blur();
-    },
+$(document).ready(() => {
+  $('#form').submit((event) => {
+    event.preventDefault();
+    $.ajax({
+      url: 'https://www.enformed.io/k3dr9smc',
+      method: 'post',
+      dataType: 'json',
+      accepts: 'application/json',
+      data: $('#form').serialize(),
+      success: (() => {
+        $('.error').fadeIn(500).show();
+        $('#form')[0].reset();
+        $(setTimeout(() => {
+          $('.success').fadeOut('slow');
+        }, 2000));
+      }),
+      error: ((err) => {
+        console.log('error', err);
+        $('.error').fadeIn(500).show();
+        $(setTimeout(() => {
+          $('.error').fadeOut('slow');
+        }, 2000));
+      }),
+    });
   });
 });
+
