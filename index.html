@@ -1,193 +1,211 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang='en'>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge, chrome=1'>
-    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-    <meta name='description' content="Marshall Danel's Portfolio">
-    <meta author='Marshall Danel'>
-    <title>Marshall Danel</title>
-    <script async src='https://use.fontawesome.com/eb2107fcce.js'></script>
-    <link rel='stylesheet' href='./scss/main.css'>
-    <link rel='apple-touch-icon' sizes='180x180' href='apple-touch-icon.png'>
-    <link rel='icon' type='image/png' sizes='32x32' href='favicon-32x32.png'>
-    <link rel='icon' type='image/png' sizes='16x16' href='favicon-16x16.png'>
-    <link rel='manifest' href='manifest.json'>
-    <link rel='mask-icon' href='safari-pinned-tab.svg' color='#5bbad5'>
-  </head>
-  <body>
+<head>
+  <meta http-equiv='content-type' content='text/html; charset=utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta name='description' content="Marshall Danel's Portfolio">
+  <title>Marshall Danel</title>
+  <!-- MAIN STYLES -->
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel='stylesheet' href='./css/main.css'>
+  <!-- FAVICONS -->
+  <link rel='apple-touch-icon' sizes='180x180' href='apple-touch-icon.png'>
+  <link rel='icon' type='image/png' sizes='32x32' href='favicon-32x32.png'>
+  <link rel='icon' type='image/png' sizes='16x16' href='favicon-16x16.png'>
+  <link rel='manifest' href='manifest.json'>
+  <link rel='mask-icon' href='safari-pinned-tab.svg' color='#5bbad5'>
 
-    <div id='loader-wrapper'>
-      <div id='loader'></div>
-      <div class='loader-section section-left'></div>
-      <div class='loader-section section-right'></div>
-    </div>
+  <script async src='https://use.fontawesome.com/eb2107fcce.js'></script>
+  <!-- GOOGLE ANALYTICS - (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109716551-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-109716551-1');
+  </script>
+  <!--[if lt IE 9]>
+    <meta http-equiv='X-UA-Compatible' content='IE=8'>
+    <script src='./js/html5shiv.js'></script>
+    <script src='./js/respond.js'></script>
+  <![endif]-->
+</head>
+<body>
+
+  <div id='loader-wrapper'>
+    <div id='loader'></div>
+    <div class='loader-section section-left'></div>
+    <div class='loader-section section-right'></div>
+  </div>
+  
+  <div class='container'>
+    <section id='home'>
+      <h1>Marshall Danel</h1>
+      <div class='home-nav'>
+        <a href='#about'>About</a>
+        /
+        <a href='#skills'>Skills</a>
+        /
+        <a href='#projects'>Projects</a>
+        /
+        <a href='#contact'>Contact</a>
+      </div>
+      <div class='external-nav'>
+        <a href='https://linkedin.com/in/marshalldanel' target='_blank' rel="noopener noreferrer">
+          <i class='fa fa-linkedin' aria-hidden='true'></i>
+        </a>
+        <a href='https://www.dropbox.com/s/jpuaqoiwq9sk4sp/danel_marshall.pdf?dl=0' target='_blank' rel="noopener noreferrer">Resume</a>
+        <a href='https://github.com/marshalldanel' target='_blank' rel="noopener noreferrer">
+          <i class='fa fa-github'></i>
+        </a>
+      </div>
+    </section>
     
-    <div class='container'>
-      <section id='home'>
-        <h1>Marshall Danel</h1>
-        <div class='home-nav'>
-          <a href='#about'>About</a>
-          /
-          <a href='#skills'>Skills</a>
-          /
-          <a href='#projects'>Projects</a>
-          /
-          <a href='#contact'>Contact</a>
-        </div>
-        <div class='external-nav'>
-          <a href='https://linkedin.com/in/marshalldanel' target='_blank'>
-            <i class='fa fa-linkedin' aria-hidden='true'></i>
-          </a>
-          <a href='https://www.dropbox.com/s/jpuaqoiwq9sk4sp/danel_marshall.pdf?dl=0' target='_blank'>Resume</a>
-          <a href='https://github.com/marshalldanel' target='_blank'>
-            <i class='fa fa-github'></i>
-          </a>
-        </div>
-      </section>
-      
-      <section id='about'>
-        <h2 class='title'>About Me</h2>
-        <div id='about-img'>
-          <img src='./docs/thedude.jpg' alt='Marshall Danel'>
-        </div>
-        <h3>Marshall Danel</h3>
-        <p id='position'>Web Developer</p>
-        <p class='content'>
-          Developer based in Northern California. I build things. Started from the bottom, now I'm... looking for work. Let's make something together!
-        </p>
-      </section>
-      
-      <section id='skills'>
-        <h2 class='title'>Skills</h2>
-        <div>
-          <img src='./docs/skills/reactreduxlogo.jpeg' alt='react logo'>
-          <img src='./docs/skills/sass.svg' alt='sass logo'>
-          <img src='./docs/skills/ror.png' alt='ruby logo'>
-          <img src='./docs/skills/node.svg' alt='node logo'>
-          <img src='./docs/skills/html-css-js.png' alt='html/css/js logo'>
-          <img src='./docs/skills/postgresql.svg' alt='postgresql logo'>
-          <img src='./docs/skills/git.png' alt='git logo'>
-          <img src='./docs/skills/mocha-chai.png' alt='chai/mocha logo'>
-          <img src='./docs/skills/jquery.png' alt='jquery logo'>
-        </div>
-      </section>
-      
-      <section id='projects'>
-        <h2 class='title'>Projects</h2>
-        <div id='projects-img'>
-
-          <div class='project-wrap'>
-            <a href='#modal' id='roadieModalBtn'><img src='./docs/projects/roadie.png' alt='roadie screenshot'></a>
-            <div id='roadieModal' class='modal'>
-              <div class='modal-container'>
-                <span class='closeBtn'>&times;</span>
-                <div class='modal-content'>
-                  <img src='./docs/projects/roadie2.png' alt='roadie screenshot'>
-                  <a href='https://github.com/marshalldanel/roadiesounds' target='_blank'>
-                    <h4 class='modal-title'>Roadie Sounds</h4>
-                  </a>
-                  <p>Music discovery service using multiple APIs, React Redux, Node JS and Express. A live music road-trip app where users select locations, genres and dates to receive a list of concerts and playlists that they can save to their Spotify account.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class='project-wrap'>
-            <a href='#modal' id='chattyModalBtn'><img src='./docs/projects/chatty.png' alt='chatty screenshot'></a>
-            <div id='chattyModal' class='modal'>
-              <div class='modal-container'>
-                <span class='closeBtn'>&times;</span>
-                <div class='modal-content'>
-                  <img src='./docs/projects/chatty2.png' alt='chatty screenshot'>
-                  <a href='https://github.com/marshalldanel/chatty' target='_blank'>
-                    <h4 class='modal-title'>Chatty</h4>
-                  </a>
-                  <p>Chatroom app based on React and WebSockets. A realtime chat app where users can send text or pictures, and receive notifications regarding online users.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class='project-wrap'>
-            <a href='#modal' id='jungleModalBtn'><img src='./docs/projects/jungle.png' alt='tweetr screenshot'></a>
-            <div id='jungleModal' class='modal'>
-              <div class='modal-container'>
-                <span class='closeBtn'>&times;</span>
-                <div class='modal-content'>
-                  <img src='./docs/projects/jungle2.png' alt='tweetr screenshot'>
-                  <a href='https://github.com/marshalldanel/jungle-rails' target='_blank'>
-                    <h4 class='modal-title'>Jungle</h4>
-                  </a>
-                  <p>E-commerce application using Rails, Postgres, SASS, and Active Record. Inherited a large code base, and added multiple features.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class='project-wrap'>
-            <a href='#modal' id='schooodleModalBtn'><img src='./docs/projects/schooodle.png' alt='schooodle screenshot'></a>
-            <div id='schooodleModal' class='modal'>
-              <div class='modal-container'>
-                <span class='closeBtn'>&times;</span>
-                <div class='modal-content'>
-                  <img src='./docs/projects/schooodle2.png' alt='schooodle screenshot'>
-                  <a href='https://github.com/marshalldanel/schoodle' target='_blank'>
-                    <h4 class='modal-title'>Schooodle</h4>
-                  </a>
-                  <p>Full stack event app using RESTful principles built on Node JS and Express. A streamlined scheduling app with user-friendly event setup, polling options and invitation functionality.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-      
-      <section id='contact'>
-        <h2 class='title'>Get In Touch</h2>
-        <div class='contact-form'>
-          <form id='form'>
-            <div class='form-group'>
-              <input type='text' class='form-input' name='name' placeholder='Name' required />
-            </div>
-            <div class='form-group'>
-              <input type='email' class='form-input' name='email' placeholder='E-Mail' required />
-            </div>
-            <div class='form-group'>
-              <textarea type='text' class='form-input' name='message' placeholder='Message' required ></textarea>
-              <input type='hidden' name='*honeypot' style='display:none'/>
-            </div>
-            <input type='submit' class='form-group button-black' id='submit' value='Submit' />
-          </form>
-        </div>
-      </section>
-      
-      <footer>
-        <p><i class='fa fa-copyright'></i> 2017 | Marshall Danel</p>
-        <div class='external-nav'>
-          <a href='https://linkedin.com/in/marshalldanel' target='_blank'>
-            <i class='fa fa-linkedin'></i>
-          </a>
-          <a href='https://www.dropbox.com/s/jpuaqoiwq9sk4sp/danel_marshall.pdf?dl=0' target='_blank'>Resume</a>
-          <a href='https://github.com/marshalldanel' target='_blank'>
-            <i class='fa fa-github'></i>
-          </a>
-        </div>
-      </footer>
-    </div>
+    <section id='about'>
+      <h2 class='title'>About Me</h2>
+      <div id='about-img'>
+        <img src='./docs/thedude.jpg' alt='Marshall Danel'>
+      </div>
+      <h3>Marshall Danel</h3>
+      <p id='position'>Web Developer</p>
+      <p class='content'>
+        <br class='break'>Developer based in Northern California. I build things. Started from the bottom, now I'm... looking for work. Let's make something together!
+      </p>
+    </section>
     
-    <script src='https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js'></script>
-    <script>
-      WebFont.load({
-        google: {
-          families: ['Lato:400,300', 'Merriweather:300,300italic,400']
-        }
-      });
-    </script>
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
-    <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
-    <script src='main.js'></script>
-  </body>
-  </html>
+    <section id='skills'>
+      <h2 class='title'>Skills</h2>
+      <div>
+        <img src='./docs/skills/reactreduxlogo.jpeg' alt='react logo'>
+        <img src='./docs/skills/sass.svg' alt='sass logo'>
+        <img src='./docs/skills/ror.png' alt='ruby logo'>
+        <img src='./docs/skills/node.svg' alt='node logo'>
+        <img src='./docs/skills/html-css-js.png' alt='html/css/js logo'>
+        <img src='./docs/skills/postgresql.svg' alt='postgresql logo'>
+        <img src='./docs/skills/git.png' alt='git logo'>
+        <img src='./docs/skills/mocha-chai.png' alt='chai/mocha logo'>
+        <img src='./docs/skills/jquery.png' alt='jquery logo'>
+      </div>
+    </section>
+    
+    <section id='projects'>
+      <h2 class='title'>Projects</h2>
+      <div id='projects-img'>
+
+        <div class='project-wrap'>
+          <a href='#modal' id='roadieModalBtn'><img src='./docs/projects/roadie.png' alt='roadie screenshot'></a>
+          <div id='roadieModal' class='modal'>
+            <div class='modal-container'>
+              <span class='closeBtn'>&times;</span>
+              <div class='modal-content'>
+                <img src='./docs/projects/roadie2.png' alt='roadie screenshot'>
+                <a href='https://github.com/marshalldanel/roadiesounds' target='_blank' rel="noopener noreferrer">
+                  <h4 class='modal-title'>Roadie Sounds</h4>
+                </a>
+                <p>Music discovery service using multiple APIs, React Redux, Node JS and Express. A live music road-trip app where users select locations, genres and dates to receive a list of concerts and playlists that they can save to their Spotify account.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='project-wrap'>
+          <a href='#modal' id='chattyModalBtn'><img src='./docs/projects/chatty.png' alt='chatty screenshot'></a>
+          <div id='chattyModal' class='modal'>
+            <div class='modal-container'>
+              <span class='closeBtn'>&times;</span>
+              <div class='modal-content'>
+                <img src='./docs/projects/chatty2.png' alt='chatty screenshot'>
+                <a href='https://github.com/marshalldanel/chatty' target='_blank' rel="noopener noreferrer">
+                  <h4 class='modal-title'>Chatty</h4>
+                </a>
+                <p>Chatroom app based on React and WebSockets. A realtime chat app where users can send text or pictures, and receive notifications regarding online users.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='project-wrap'>
+          <a href='#modal' id='jungleModalBtn'><img src='./docs/projects/jungle.png' alt='tweetr screenshot'></a>
+          <div id='jungleModal' class='modal'>
+            <div class='modal-container'>
+              <span class='closeBtn'>&times;</span>
+              <div class='modal-content'>
+                <img src='./docs/projects/jungle2.png' alt='tweetr screenshot'>
+                <a href='https://github.com/marshalldanel/jungle-rails' target='_blank' rel="noopener noreferrer">
+                  <h4 class='modal-title'>Jungle</h4>
+                </a>
+                <p>E-commerce application using Rails, Postgres, SASS, and Active Record. Inherited a large code base, and added multiple features.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class='project-wrap'>
+          <a href='#modal' id='schooodleModalBtn'><img src='./docs/projects/schooodle.png' alt='schooodle screenshot'></a>
+          <div id='schooodleModal' class='modal'>
+            <div class='modal-container'>
+              <span class='closeBtn'>&times;</span>
+              <div class='modal-content'>
+                <img src='./docs/projects/schooodle2.png' alt='schooodle screenshot'>
+                <a href='https://github.com/marshalldanel/schoodle' target='_blank' rel="noopener noreferrer">
+                  <h4 class='modal-title'>Schooodle</h4>
+                </a>
+                <p>Full stack event app using RESTful principles built on Node JS and Express. A streamlined scheduling app with user-friendly event setup, polling options and invitation functionality.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+    <section id='contact'>
+      <h2 class='title'>Get In Touch</h2>
+      <div class='contact-form'>
+        <form id='form'>
+          <div class='form-group'>
+            <input type='text' class='form-input' name='name' placeholder='Name' required />
+          </div>
+          <div class='form-group'>
+            <input type='email' class='form-input' name='email' placeholder='E-Mail' required />
+          </div>
+          <div class='form-group'>
+            <textarea class='form-input' name='message' placeholder='Message' required ></textarea>
+            <input type='hidden' name='*honeypot' style='display:none'/>
+          </div>
+          <input type='submit' class='form-group button-black' id='submit' value='Submit' />
+        </form>
+      </div>
+      <div class="success">Thank you!<br>I will be in touch soon</div>
+      <div class="error">Something went wrong!<br>Please try again</div>
+    </section>
+    
+    <footer>
+      <p><i class='fa fa-copyright'></i> 2017 | Marshall Danel</p>
+      <div class='external-nav'>
+        <a href='https://linkedin.com/in/marshalldanel' target='_blank' rel="noopener noreferrer">
+          <i class='fa fa-linkedin'></i>
+        </a>
+        <a href='https://www.dropbox.com/s/jpuaqoiwq9sk4sp/danel_marshall.pdf?dl=0' target='_blank' rel="noopener noreferrer">Resume</a>
+        <a href='https://github.com/marshalldanel' target='_blank' rel="noopener noreferrer">
+          <i class='fa fa-github'></i>
+        </a>
+      </div>
+    </footer>
+  </div>
+  
+  <script src='https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js'></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: ['Lato:400,300', 'Merriweather:300,300italic,400']
+      }
+    });
+  </script>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
+  <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+  <script src='main.js'></script>
+</body>
+</html>
   
