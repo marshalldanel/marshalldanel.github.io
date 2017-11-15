@@ -19,9 +19,18 @@
   }
 }
 
+.break {
+  display: none;
+
+  @include for-size(tablet-landscape-up) {
+    display: contents;
+  }
+}
+
 .content {
   color: $font;
   margin: 2em;
+  line-height: 1.3em;  
 
   @media (min-width: 900px) {
     margin: 2em 0 2em 0;

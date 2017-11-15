@@ -70,3 +70,31 @@ textarea {
   background-color: $main-dark;
   color: $main-light;
 }
+
+.success, .error {
+  display: none;
+  font-size: 3em;
+  padding: 1em;
+  position: absolute;
+  margin-top: -400px;
+  left: 50%;
+  border-radius: 5px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+  background-color: $main;
+  z-index: 999;
+
+  @include for-size(phone-only) {
+    font-size: 2em;
+    margin-top: -300px;
+  }
+}
+
+.error {
+  color: $font-error;
+}
+
+.success {
+  color: $font;  
+}
