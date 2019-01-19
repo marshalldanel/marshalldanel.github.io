@@ -6,40 +6,44 @@ $('.container').imagesLoaded({ background: true }, () => {
 // jQuery scroll logic
 // Select all links with hashes
 $('a[href*="#"]')
-// Remove links that don't actually link to anything
+  // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')
   .click(function (event) {
-  // On-page links
+    // On-page links
     if (
-      location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '')
-    &&
-    location.hostname === this.hostname
+      location.pathname.replace(/^\//, '') ===
+        this.pathname.replace(/^\//, '') &&
+      location.hostname === this.hostname
     ) {
-    // Figure out element to scroll to
+      // Figure out element to scroll to
       let target = $(this.hash);
       target = target.length ? target : $(`[name=${this.hash.slice(1)}]`);
       // Does a scroll target exist?
       if (target.length) {
-      // Only prevent default if animation is actually gonna happen
+        // Only prevent default if animation is actually gonna happen
         event.preventDefault();
-        $('html, body').animate({
-          scrollTop: target.offset().top,
-        }, 1000, () => {
-        // Callback after animation - Must change focus!
-          const $target = $(target);
-          $target.focus();
-          if ($target.is(':focus')) { // Checking if the target was focused
-            return false;
-          } else {
-            $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-            $target.focus(); // Set focus again
-          }
-        });
+        $('html, body').animate(
+          {
+            scrollTop: target.offset().top,
+          },
+          1000,
+          () => {
+            // Callback after animation - Must change focus!
+            const $target = $(target);
+            $target.focus();
+            if ($target.is(':focus')) {
+              // Checking if the target was focused
+              return false;
+            } else {
+              $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+              $target.focus(); // Set focus again
+            }
+          },
+        );
       }
     }
   });
-
 
 // Chatty modal logic
 const chattyModal = document.getElementById('chattyModal');
@@ -95,36 +99,57 @@ jungleCloseBtn.onclick = () => {
 
 // Universal modal close on outside click
 document.onclick = (e) => {
-  if (e.target === chattyModal || e.target === roadieModal || e.target === schooodleModal || e.target === jungleModal) {
+  if (
+    e.target === chattyModal ||
+    e.target === roadieModal ||
+    e.target === schooodleModal ||
+    e.target === jungleModal
+  ) {
     e.target.style.display = 'none';
   }
 };
 
-// Enformed ajax post
-$(document).ready(() => {
-  $('#form').submit((event) => {
-    event.preventDefault();
-    $.ajax({
-      url: 'https://www.enformed.io/k3dr9smc',
-      method: 'post',
-      dataType: 'json',
-      accepts: 'application/json',
-      data: $('#form').serialize(),
-      success: (() => {
-        $('.error').fadeIn(500).show();
-        $('#form')[0].reset();
-        $(setTimeout(() => {
-          $('.success').fadeOut('slow');
-        }, 2000));
-      }),
-      error: ((err) => {
-        console.log('error', err);
-        $('.error').fadeIn(500).show();
-        $(setTimeout(() => {
-          $('.error').fadeOut('slow');
-        }, 2000));
-      }),
-    });
-  });
-});
+// Serverless AWS Form
+(() => {
+  const form = document.querySelector('form');
+  const success = document.querySelector('success');
+  const fail = document.querySelector('error');
 
+  form.onsubmit = (e) => {
+    e.preventDefault();
+
+    // Prepare data to send
+    const data = {};
+    const formElements = Array.from(form);
+    formElements.map(input => (data[input.name] = input.value));
+
+    // Log what our lambda function will receive
+    console.log(JSON.stringify(data));
+
+    // New HTTP request
+    const xhr = new XMLHttpRequest();
+    xhr.open(form.method, form.action, true);
+    xhr.setRequestHeader('Accept', 'application/json: charset=utf-8');
+    xhr.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+
+    // Send data
+    xhr.send(JSON.stringify(data));
+
+    // Callback
+    xhr.onloadend = (response) => {
+      if (response.target.status === 200) {
+        form.reset();
+        success.fadeIn(500).show();
+        setTimeout(() => {
+          success.fadeOut('slow');
+        }, 2000);
+      } else {
+        fail.fadeIn(500).show();
+        setTimeout(() => {
+          fail.fadeOut('slow');
+        }, 2000);
+        console.error(JSON.parse(response.target.response).message);
+      }
+    };
+  };
+})();
