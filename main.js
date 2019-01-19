@@ -111,9 +111,9 @@ document.onclick = (e) => {
 
 // Serverless AWS Form
 (() => {
-  const form = document.querySelector('form');
-  const success = document.querySelector('success');
-  const fail = document.querySelector('error');
+  const form = document.querySelector('#form');
+  const success = document.querySelector('.success');
+  const fail = document.querySelector('.error');
 
   form.onsubmit = (e) => {
     e.preventDefault();
@@ -122,9 +122,6 @@ document.onclick = (e) => {
     const data = {};
     const formElements = Array.from(form);
     formElements.map(input => (data[input.name] = input.value));
-
-    // Log what our lambda function will receive
-    console.log(JSON.stringify(data));
 
     // New HTTP request
     const xhr = new XMLHttpRequest();
